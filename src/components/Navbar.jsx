@@ -12,23 +12,23 @@ const Navbar = () => {
   return (
     <div className="w-full  items-center bg-black text-white duration-300">
       <div className=" container mx-auto flex justify-between items-center p-3">
-        <div className=" w-24 md:w-32 duration-300 hover:scale-105">
+        <div className=" w-24 md:w-32 duration-300 hover:scale-105 cursor-pointer">
           <img src={logo} alt="Naf academy Logo" />
         </div>
 
         {/* menu */}
         <ul className="hidden md:flex divide-x-[2px] divide-gray-400 ">
-          <li className="px-8 hover:text-[#FFAD3C] duration-200 ">Kurslar</li>
-          <li className="px-8 hover:text-[#FFAD3C] duration-200 ">
+          <li className="px-8 hover:text-[#FFAD3C] duration-200 cursor-pointer ">Kurslar</li>
+          <li className="px-8 hover:text-[#FFAD3C] duration-200 cursor-pointer">
             Ochiq darslar
           </li>
-          <li className="md:pr-2 px-8 hover:text-[#FFAD3C]  duration-200">
+          <li className="md:pr-2 px-8 hover:text-[#FFAD3C] duration-200 cursor-pointer">
             Biz bilan aloqa
           </li>
         </ul>
 
         {/* Humberger */}
-        <div onClick={handleClick} className="md:hidden absolute right-10 z-10">
+        <div onClick={handleClick} className="md:hidden absolute right-10 z-10 cursor-pointer">
           {!nav ? (
             <FaBars size={23} />
           ) : (
@@ -44,11 +44,11 @@ const Navbar = () => {
               : "absolute top-0 right-0  divide-y-[2px] divide-gray-400 bg-white text-black font-medium  h-screen w-[80%] pt-14"
           }
         >
-          <li className="p-3 hover:text-[#FFAD3C] duration-200 ">Kurslar</li>
-          <li className="p-3 hover:text-[#FFAD3C] duration-200 ">
+          <li className="p-3 hover:text-[#FFAD3C] duration-200 cursor-pointer hover:bg-black">Kurslar</li>
+          <li className="p-3 hover:text-[#FFAD3C] duration-200 cursor-pointer hover:bg-black">
             Ochiq darslar
           </li>
-          <li className="p-3 hover:text-[#FFAD3C]  duration-200">
+          <li className="p-3 hover:text-[#FFAD3C]  duration-200 cursor-pointer hover:bg-black">
             Biz bilan aloqa
           </li>
         </ul>
@@ -56,7 +56,7 @@ const Navbar = () => {
 
       {/* Hero */}
       <div className="w-full">
-        <div className="container mx-auto px-3 lg:pl-14" >
+        <div className="container mx-auto px-7" >
           <h1 className="font-bold text-5xl lg:text-6xl leading-[3.9rem] pt-28">
             Kursni tanlang va oʻqishni boshlang!
           </h1>

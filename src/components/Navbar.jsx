@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import { FaBars} from "react-icons/fa";
-import {FiXCircle} from 'react-icons/fi'
+import { FaBars } from "react-icons/fa";
+import { FiXCircle } from "react-icons/fi";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex justify-between items-center bg-black text-white duration-300">
-      <div className="px-12 lg:px-0 container mx-auto flex justify-between items-center p-2">
-        <div className=" w-24 md:w-32 duration-300 ">
+    <div className="w-full  items-center bg-black text-white duration-300">
+      <div className=" container mx-auto flex justify-between items-center p-3">
+        <div className=" w-24 md:w-32 duration-300 hover:scale-105">
           <img src={logo} alt="Naf academy Logo" />
         </div>
 
@@ -29,11 +29,21 @@ const Navbar = () => {
 
         {/* Humberger */}
         <div onClick={handleClick} className="md:hidden absolute right-10 z-10">
-          {!nav ? <FaBars size={23}  /> : <FiXCircle  size={25} className="text-black" />}
+          {!nav ? (
+            <FaBars size={23} />
+          ) : (
+            <FiXCircle size={25} className="text-black" />
+          )}
         </div>
 
         {/* Mobile menu */}
-        <ul className={!nav ? 'hidden' : "absolute top-0 right-0  divide-y-[2px] divide-gray-400 bg-white text-black font-medium  h-screen w-[80%] pt-14"}>
+        <ul
+          className={
+            !nav
+              ? "hidden"
+              : "absolute top-0 right-0  divide-y-[2px] divide-gray-400 bg-white text-black font-medium  h-screen w-[80%] pt-14"
+          }
+        >
           <li className="p-3 hover:text-[#FFAD3C] duration-200 ">Kurslar</li>
           <li className="p-3 hover:text-[#FFAD3C] duration-200 ">
             Ochiq darslar
@@ -42,7 +52,20 @@ const Navbar = () => {
             Biz bilan aloqa
           </li>
         </ul>
+      </div>
 
+      {/* Hero */}
+      <div className="w-full">
+        <div className="container mx-auto px-3 lg:pl-14" >
+          <h1 className="font-bold text-5xl lg:text-6xl leading-[3.9rem] pt-28">
+            Kursni tanlang va oʻqishni boshlang!
+          </h1>
+          <p className="font-medium--dark text-xl lg:text-2xl pt-4 pb-8">
+            Hammasi juda oddiy, bilim uchun investitsiya qiling va zamonaviy{" "}
+            <br />
+            kasbni egallang !
+          </p>
+        </div>
       </div>
     </div>
   );

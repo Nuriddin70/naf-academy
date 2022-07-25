@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full  items-center bg-black text-white duration-300">
-      <div className=" container mx-auto flex justify-between items-center p-3">
+      <div className=" container fixed mx-auto flex justify-between items-center p-3">
         <div className=" w-24 md:w-32 duration-300 hover:scale-105 cursor-pointer">
           <img src={logo} alt="Naf academy Logo" />
         </div>

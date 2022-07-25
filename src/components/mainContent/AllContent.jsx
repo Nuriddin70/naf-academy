@@ -5,9 +5,9 @@ import {BsClock, BsFillCalendar3WeekFill} from "react-icons/bs"
 const AllContent = () => {
   return (
     <div className="lg:flex mb-10 ">
-      <div className="container mx-auto px-4  md:grid md:grid-cols-2 md:border-2 lg:grid-cols-none lg:w-[40%] items-center shadow-lg">
-      <div className="border-2 md:border-none py-6 bg-[#FAFAFA] "> 
-        <h2 className="text-2xl text-center font-bold mb-3">Web dasturlash</h2>
+      <div className="container mx-auto md:grid md:grid-cols-2 md:border-2 lg:grid-cols-none lg:w-[40%] items-center shadow-lg">
+      <div className="border-2 md:border-none py-6 bg-[#FAFAFA] flex flex-col items-center"> 
+        <h2 className="text-2xl text-center font-bold mb-3 flex items-center">Web dasturlash</h2>
         <img src={cartLogo} alt="Web Dasturlash rasmi" />
       </div>
       <div className="border-2 border-t-0 md:border-none p-6">

@@ -4,14 +4,28 @@ import { FaBars } from "react-icons/fa";
 import { FiXCircle } from "react-icons/fi";
 
 const Navbar = () => {
+
+  // Setting mobile nav
   const [nav, setNav] = useState(false);
   const handleClick = () => {
     setNav(!nav);
   };
 
+  //change nav color when scroll
+  const [color, setColor] = useState()
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true)
+    } else {
+      setColor(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
+
   return (
     <div className="w-full  items-center bg-black text-white duration-300">
-      <div className=" container fixed mx-auto flex justify-between items-center p-3">
+      <div className={" bg-[rgba(0,0,0,.9)] w-full fixed mx-auto flex justify-between items-center py-3 px-5"}>
         <div className=" w-24 md:w-32 duration-300 hover:scale-105 cursor-pointer">
           <img src={logo} alt="Naf academy Logo" />
         </div>

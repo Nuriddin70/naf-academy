@@ -1,15 +1,14 @@
 import React from "react";
-import { Select, Option } from "@material-tailwind/react";
 
 const Register = () => {
   return (
-    <div className="w-full h-screen px-5">
+    <div className="w-full  px-5 pb-36">
       <div className="container mx-auto pt-12  md:pt-20 ">
         <h1 className="text-3xl font-semibold pb-5 leading-10 text-center tetx-[#0D0D0D] ">
           Kursga yozilish uchun xabar qoldiring
         </h1>
 
-        <form className="relative">
+        <form className="relative z-[-10]">
           <div className="grid gap-6 mb-6">
             <div className="grid gap-6 md:grid-cols-2 ">
               <div>

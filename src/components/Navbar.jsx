@@ -24,7 +24,7 @@ const Navbar = () => {
   window.addEventListener('scroll', changeColor)
 
   return (
-    <div className="w-full  items-center bg-black text-white duration-300">
+    <div className="w-full  items-center bg-black text-white duration-300 z-10">
       <div className={" bg-[rgba(0,0,0,.9)] w-full fixed mx-auto flex justify-between items-center py-3 px-5"}>
         <div className=" w-24 md:w-32 duration-300 hover:scale-105 cursor-pointer">
           <img src={logo} alt="Naf academy Logo" />

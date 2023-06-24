@@ -38,14 +38,12 @@ const Footer = () => {
 
         {/* Google map */}
         <div className="text-white bg-slate-400 max-w-80 h-44 md:w-[37.5rem] md:h-[18.4rem] mt-16 lg:mt-0 ">
-          <iframe className="w-full h-full"
-            src="https://www.google.com/maps/d/embed?mid=1KUWpAJRMOgiDJu729AT9BgBeIUI&ehbc=2E312F"
-            frameborder="0"
-            style={{ border: 0 }}
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+        <iframe className="w-full h-[100%]"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87169.08538480808!2d-122.41941579403425!3d37.77492951184153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807074f63747%3A0xb43a4d635fb48da!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1567260700401!5m2!1sen!2sca"
+        title="Map"
+        style={{ border: 0 }}
+        allowFullScreen
+      ></iframe>
         </div>
       </div>
     </div>

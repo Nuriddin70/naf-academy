@@ -8,12 +8,12 @@ const Register = () => {
           Kursga yozilish uchun xabar qoldiring
         </h1>
 
-        <form className="relative z-[-10]">
+        <form className="">
           <div className="grid gap-6 mb-6">
             <div className="grid gap-6 md:grid-cols-2 ">
               <div>
                 <label
-                  for="first_name"
+                  htmlFor="first_name"
                   className="block mb-2 text-base font-medium text-[#3A3A3A]"
                 >
                   Ism
@@ -28,7 +28,7 @@ const Register = () => {
               
               <div>
                 <label
-                  for="phone"
+                  htmlFor="phone"
                   className="block mb-2 text-base font-medium text-[#3A3A3A]"
                 >
                   Telefon{" "}
@@ -46,12 +46,9 @@ const Register = () => {
             </div>
 
             <fieldset>
-              <div class="relative border lg:w-[49%] rounded-lg bg-gray-50 border-gray-300 text-gray-800  shadow-inner">
-                <label for="frm-whatever" class="sr-only">
-                  My field
-                </label>
+              <div className="flex border lg:w-[49%] rounded-lg bg-gray-50 border-gray-300 text-gray-800 shadow-inner ">
                 <select
-                  class="appearance-none w-full py-2 px-2.5 bg-gray-50 shadow-inner"
+                  className="appearance-none w-full py-2 px-2.5 bg-gray-50 shadow-inner"
                   name="whatever"
                   id="frm-whatever"
                 >
@@ -62,9 +59,9 @@ const Register = () => {
                   <option value="4">Web Dizayn</option>
                   <option value="5">Komputer savodxonligi</option>
                 </select>
-                <div class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2.5 text-gray-700 border-l">
+                <div className="pointer-events-none flex items-center px-2.5 text-gray-700 border-l">
                   <svg
-                    class="h-4 w-4"
+                    className="h-4 w-4"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                   >
@@ -76,7 +73,7 @@ const Register = () => {
 
             <div>
               <label
-                for="message"
+                htmlFor="message"
                 className="block mb-2 text-sm font-medium text-[#3A3A3A] "
               >
                 Xabaringizni qoldiring
